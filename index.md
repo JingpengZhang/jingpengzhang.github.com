@@ -1,6 +1,6 @@
 # <center>小屋🛖</center>
 
-**<center>[点击进入](/htmls/pages/blog-post.html)</center>**
+**<center><a href="/htmls/pages/blog-post.html">Link text</a></center>**
 &nbsp;
 
 &nbsp;
