@@ -1,6 +1,6 @@
 # <center>小屋🛖</center>
 
-**<center><a href="/htmls/pages/blog-post.html">Link text</a></center>**
+**<center><a href="/blog/html/home.html">Go in</a></center>**
 &nbsp;
 
 &nbsp;
