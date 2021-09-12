@@ -1,6 +1,4 @@
 &nbsp;
-**<center><a href="/blog/html/home.html">Go in</a></center>**
+**<center><a href="/blog/PrinciplesOfComputerOrganization/page1.md">Go in</a></center>**
 &nbsp;
 ![avatar](/blog/images/background.png)
-&nbsp;
-<center>Copyright By JPZ</center>
