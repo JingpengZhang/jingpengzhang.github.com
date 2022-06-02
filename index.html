@@ -1,12 +1,901 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css">
 </head>
+<style>
+    body{
+        font-family: "Apple Color Emoji";
+    }
+</style>
 <body>
-    <h1>Hello World</h1>
+<!-- navigator -->
+<div id="nav" class="tw-transition-all tw-duration-300 tw-w-full tw-h-20 tw-fixed tw-top-0 tw-left-0 tw-z-50 tw-shadow-md">
+    <div class="inner-box tw-h-full tw-flex tw-justify-between tw-items-center">
+        <!--    logo-->
+        <div class="tw-h-full tw-flex tw-justify-center tw-items-center">
+            <img src="./images/logo.png" alt="" class="">
+        </div>
+        <!--    list-->
+        <ul id="nav_ul" class="tw-flex tw-gap-4 tw-text-white">
+            <li class="hover:tw-text-primary tw-transition-all tw-duration-100">
+                <a href="" class="">首页</a>
+            </li>
+            <li class="hover:tw-text-primary tw-transition-all tw-duration-100">
+                <a href="" class="">细胞试剂</a>
+            </li>
+            <li class="hover:tw-text-primary tw-transition-all tw-duration-100">
+                <a href="" class="">细胞类产品</a>
+            </li>
+            <li class="hover:tw-text-primary tw-transition-all tw-duration-100">
+                <a href="" class="">技术服务</a>
+            </li>
+            <li class="hover:tw-text-primary tw-transition-all tw-duration-100">
+                <a href="" class="">药物筛选</a>
+            </li>
+            <li class="hover:tw-text-primary tw-transition-all tw-duration-100">
+                <a href="" class="">细胞医疗</a>
+            </li>
+            <li class="hover:tw-text-primary tw-transition-all tw-duration-100">
+                <a href="" class="">资源中心</a>
+            </li>
+            <li class="hover:tw-text-primary tw-transition-all tw-duration-100">
+                <a href="" class="">关于我们</a>
+            </li>
+            <li class="tw-flex tw-items-center">
+                <img id="nav_search" src="./images/放大镜.png" alt="" class="" style="filter: brightness(100);">
+            </li>
+            <li class="tw-cursor-pointer tw-flex tw-items-center tw-gap-2">
+                <img src="./images/china_18230.png" alt="" class="tw-h-4 tw-w-4">
+                <div id="nav_country" class="tw-text-white">
+                    <svg class="tw-fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"/></svg>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- banners  -->
+<div class="tw-w-full ">
+    <div id="banner_window" class="tw-relative tw-w-full tw-overflow-hidden">
+        <ul id="banner_list" class="tw-absolute tw-z-10 tw-top-0 tw-left-0 tw-flex tw-transition-all tw-duration-1000">
+            <li class="tw-shrink-0 tw-relative tw-h-fit tw-w-screen">
+                <img src="./images/banner/banner1.jpg" alt="" class="">
+                <div class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0">
+                    <div class="inner-box tw-relative tw-flex tw-justify-between tw-h-full">
+                        <div class="tw-relative tw-top-1/2">
+                            <p class="tw-text-white tw-text-3xl tw-font-bold">iPSC技术产业化 <br>
+                                先行者与领导品牌
+                            </p>
+                            <a href=""
+                               class="tw-text-white tw-border-2 tw-border-white tw-rounded-xl tw-px-3 tw-mt-6 tw-inline-block">
+                                了解详情
+                            </a>
+                        </div>
+                        <div class="tw-absolute tw-top-1/2 tw-right-0 tw-transform -tw-translate-y-1/2">
+                            <!--    快捷跳转-->
+                            <ul class="tw-flex tw-flex-col tw-w-48">
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">细胞试剂</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">细胞类产品</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">技术服务</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">药物筛选</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">细胞医疗</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="tw-shrink-0 tw-relative tw-h-fit tw-w-screen">
+                <img src="./images/banner/banner1.jpg" alt="" class="">
+                <div class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0">
+                    <div class="inner-box tw-relative tw-flex tw-justify-between tw-h-full">
+                        <div class="tw-relative tw-top-1/2">
+                            <p class="tw-text-white tw-text-3xl tw-font-bold">iPSC技术产业化 <br>
+                                先行者与领导品牌
+                            </p>
+                            <a href=""
+                               class="tw-text-white tw-border-2 tw-border-white tw-rounded-xl tw-px-3 tw-mt-6 tw-inline-block">
+                                了解详情
+                            </a>
+                        </div>
+                        <div class="tw-absolute tw-top-1/2 tw-right-0 tw-transform -tw-translate-y-1/2">
+                            <!--    快捷跳转-->
+                            <ul class="tw-flex tw-flex-col tw-w-48">
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">细胞试剂</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">细胞类产品</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">技术服务</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">药物筛选</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">细胞医疗</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="tw-shrink-0 tw-relative tw-h-fit tw-w-screen">
+                <img src="./images/banner/banner1.jpg" alt="" class="">
+                <div class="tw-absolute tw-w-full tw-h-full tw-top-0 tw-left-0">
+                    <div class="inner-box tw-relative tw-flex tw-justify-between tw-h-full">
+                        <div class="tw-relative tw-top-1/2">
+                            <p class="tw-text-white tw-text-3xl tw-font-bold">iPSC技术产业化 <br>
+                                先行者与领导品牌
+                            </p>
+                            <a href=""
+                               class="tw-text-white tw-border-2 tw-border-white tw-rounded-xl tw-px-3 tw-mt-6 tw-inline-block">
+                                了解详情
+                            </a>
+                        </div>
+                        <div class="tw-absolute tw-top-1/2 tw-right-0 tw-transform -tw-translate-y-1/2">
+                            <!--    快捷跳转-->
+                            <ul class="tw-flex tw-flex-col tw-w-48">
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">细胞试剂</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">细胞类产品</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">技术服务</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">药物筛选</span>
+                                </li>
+                                <li class="banner-quick-normal">
+                                    <span class="tw-font-bold">细胞医疗</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul id="banner_p" class="tw-z-20 tw-flex tw-absolute tw-bottom-6 tw-right-1/2 tw-items-center">
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+        </ul>
+    </div>
+</div>
+
+<div id="s_list_window" class=" tw-relative tw-w-full tw-h-fit tw-overflow-hidden">
+    <img src="./images/中盛溯源PC端-home3-_04.jpg" alt="" class="">
+    <ul id="s_list" class="tw-absolute tw-top-0 tw-transition-all tw-duration-500 tw-left-1/2 tw-transform -tw-translate-x-1/2 inner-box">
+        <li class="tw-w-full tw-flex tw-items-center">
+            <div class="tw-w-1/2">
+                <p class="tw-text-30 tw-font-bold">iPSC技术产业化的领导品牌</p>
+                <p class="tw-text-sm tw-mt-12">自创立以来，中盛溯源致力于打造干细胞全产业链产品和服务，与院校、药企、医院紧密合作，开展多方向应用。中盛溯源将依托自主知识产权的核心技术平台，秉承诚信、严谨、创新、服务的企业理念，引领和推动中国干细胞产业进程，将中盛溯源打造成为国际一流的生物技术和生物医药领军企业。
+                </p>
+                <ul class="tw-flex tw-mt-16">
+                    <li class="tw-flex tw-flex-col">
+                        <div class="tw-w-8 tw-h-8">
+                            <img src="./images/s/build.png" alt="" class="">
+                        </div>
+                        <span class="tw-text-30 tw-font-bold tw-mt-2">2016</span>
+                        <span class="tw-text-sm tw-font-bold tw-mt-2">成立时间</span>
+                    </li>
+                    <li class="tw-flex tw-flex-col tw-ml-14">
+                        <div class="tw-w-8 tw-h-8">
+                            <img src="./images/s/person.png" alt="" class="">
+                        </div>
+                        <span class="tw-text-30 tw-font-bold tw-mt-2"><span class="num">150</span>+</span>
+                        <span class="tw-text-sm tw-font-bold tw-mt-2">员工</span>
+                    </li>
+                    <li class="tw-flex tw-flex-col tw-ml-14">
+                        <div class="tw-w-8 tw-h-8">
+                            <img src="./images/s/partner.png" alt="" class="">
+                        </div>
+                        <span class="tw-text-30 tw-font-bold tw-mt-2"><span class="num">20</span>+</span>
+                        <span class="tw-text-sm tw-font-bold tw-mt-2">合作伙伴</span>
+                    </li>
+                </ul>
+                <a href="" class="tw-text-white tw-bg-primary tw-rounded-full tw-px-4 tw-py-1 tw-inline-block tw-mt-12">了解更多</a>
+            </div>
+        </li>
+        <li class="tw-w-full tw-flex tw-items-center">
+            <div class="tw-w-1/2">
+                <p class="tw-text-30 tw-font-bold">iPSC技术产业化的领导品牌</p>
+                <p class="tw-text-sm tw-mt-12">自创立以来，中盛溯源致力于打造干细胞全产业链产品和服务，与院校、药企、医院紧密合作，开展多方向应用。中盛溯源将依托自主知识产权的核心技术平台，秉承诚信、严谨、创新、服务的企业理念，引领和推动中国干细胞产业进程，将中盛溯源打造成为国际一流的生物技术和生物医药领军企业。
+                </p>
+                <ul class="tw-flex tw-mt-16">
+                    <li class="tw-flex tw-flex-col">
+                        <div class="tw-w-8 tw-h-8">
+                            <img src="./images/s/build.png" alt="" class="">
+                        </div>
+                        <span class="tw-text-30 tw-font-bold tw-mt-2">2016</span>
+                        <span class="tw-text-sm tw-font-bold tw-mt-2">成立时间</span>
+                    </li>
+                    <li class="tw-flex tw-flex-col tw-ml-14">
+                        <div class="tw-w-8 tw-h-8">
+                            <img src="./images/s/person.png" alt="" class="">
+                        </div>
+                        <span class="tw-text-30 tw-font-bold tw-mt-2"><span class="num">150</span>+</span>
+                        <span class="tw-text-sm tw-font-bold tw-mt-2">员工</span>
+                    </li>
+                    <li class="tw-flex tw-flex-col tw-ml-14">
+                        <div class="tw-w-8 tw-h-8">
+                            <img src="./images/s/partner.png" alt="" class="">
+                        </div>
+                        <span class="tw-text-30 tw-font-bold tw-mt-2"><span class="num">20</span>+</span>
+                        <span class="tw-text-sm tw-font-bold tw-mt-2">合作伙伴</span>
+                    </li>
+                </ul>
+                <a href="" class="tw-text-white tw-bg-primary tw-rounded-full tw-px-4 tw-py-1 tw-inline-block tw-mt-12">了解更多</a>
+            </div>
+        </li>
+        <li class="tw-w-full tw-flex tw-items-center">
+            <div class="tw-w-1/2">
+                <p class="tw-text-30 tw-font-bold">iPSC技术产业化的领导品牌</p>
+                <p class="tw-text-sm tw-mt-12">自创立以来，中盛溯源致力于打造干细胞全产业链产品和服务，与院校、药企、医院紧密合作，开展多方向应用。中盛溯源将依托自主知识产权的核心技术平台，秉承诚信、严谨、创新、服务的企业理念，引领和推动中国干细胞产业进程，将中盛溯源打造成为国际一流的生物技术和生物医药领军企业。
+                </p>
+                <ul class="tw-flex tw-mt-16">
+                    <li class="tw-flex tw-flex-col">
+                        <div class="tw-w-8 tw-h-8">
+                            <img src="./images/s/build.png" alt="" class="">
+                        </div>
+                        <span class="tw-text-30 tw-font-bold tw-mt-2">2016</span>
+                        <span class="tw-text-sm tw-font-bold tw-mt-2">成立时间</span>
+                    </li>
+                    <li class="tw-flex tw-flex-col tw-ml-14">
+                        <div class="tw-w-8 tw-h-8">
+                            <img src="./images/s/person.png" alt="" class="">
+                        </div>
+                        <span class="tw-text-30 tw-font-bold tw-mt-2"><span class="num">150</span>+</span>
+                        <span class="tw-text-sm tw-font-bold tw-mt-2">员工</span>
+                    </li>
+                    <li class="tw-flex tw-flex-col tw-ml-14">
+                        <div class="tw-w-8 tw-h-8">
+                            <img src="./images/s/partner.png" alt="" class="">
+                        </div>
+                        <span class="tw-text-30 tw-font-bold tw-mt-2"><span class="num">20</span>+</span>
+                        <span class="tw-text-sm tw-font-bold tw-mt-2">合作伙伴</span>
+                    </li>
+                </ul>
+                <a href="" class="tw-text-white tw-bg-primary tw-rounded-full tw-px-4 tw-py-1 tw-inline-block tw-mt-12">了解更多</a>
+            </div>
+        </li>
+    </ul>
+    <ul id="s2_p" class="tw-flex tw-flex-col tw-absolute tw-bottom-24 tw-right-12 tw-items-center">
+        <li class=""></li>
+        <li class=""></li>
+        <li class=""></li>
+    </ul>
+</div>
+
+<!-- service -->
+<div id="service_box" class="tw-relative tw-w-full tw-h-fit ">
+    <div id="service_bg" class="tw-absolute tw-top-0 tw-left-0 -tw-z-10 tw-w-full tw-bg-fixed" style="background-image: url(./images/bg_pro.jpg)">
+
+    </div>
+    <div class=" inner-box tw-py-16 tw-flex tw-flex-col tw-items-center">
+        <div class="tw-relative">
+            <span class="tw-text-primary tw-text-30">产品与服务</span>
+            <p class="tw-absolute -tw-z-10 tw-top-1/2 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-4xl tw-text-gray-300 tw-text-center tw-w-72">产品与服务</p>
+        </div>
+
+        <span class="tw-text-20 tw-text-gray-500 tw-mt-4">Products & Services</span>
+        <ul id="ps_list" class="tw-flex tw-justify-between tw-w-full tw-mt-24">
+            <li class="tw-flex tw-flex-col tw-items-center">
+                <div tabindex="1" class="ps_img tw-float-left tw-transition-all tw-duration-500 tw-h-96 tw-w-64 tw-rounded-3xl tw-overflow-hidden tw-shadow-2xl tw-cursor-pointer">
+                    <img src="./images/中盛溯源PC端-home3-_07.jpg" alt="" class="imgCover">
+                </div>
+                <span class="tw-mt-12">细胞试剂</span>
+                <a href="" class="tw-mt-4 tw-text-xs tw-text-white tw-bg-primary tw-rounded-3xl tw-px-4 tw-py-1">
+                    了解更多
+                </a>
+            </li>
+            <li class="tw-flex tw-flex-col tw-items-center">
+                <div tabindex="1" class="ps_img tw-float-left tw-transition-all tw-duration-500 tw-h-96 tw-w-64 tw-rounded-3xl tw-overflow-hidden tw-shadow-2xl tw-cursor-pointer">
+                    <img src="./images/中盛溯源PC端-home3-_09.jpg" alt="" class="imgCover">
+                </div>
+                <span class="tw-mt-12">细胞类产品</span>
+                <a href="" class="tw-mt-4 tw-text-xs tw-text-white tw-bg-primary tw-rounded-3xl tw-px-4 tw-py-1">
+                    了解更多
+                </a>
+            </li>
+            <li class="tw-flex tw-flex-col tw-items-center">
+                <div tabindex="1" class="ps_img tw-float-left tw-transition-all tw-duration-500 tw-h-96 tw-w-64 tw-rounded-3xl tw-overflow-hidden tw-shadow-2xl tw-cursor-pointer">
+                    <img src="./images/中盛溯源PC端-home3-_11.jpg" alt="" class="imgCover">
+                </div>
+                <span class="tw-mt-12">技术服务</span>
+                <a href="" class="tw-mt-4 tw-text-xs tw-text-white tw-bg-primary tw-rounded-3xl tw-px-4 tw-py-1">
+                    了解更多
+                </a>
+            </li>
+            <li class="tw-flex tw-flex-col tw-items-center">
+                <div tabindex="1" class="ps_img tw-float-left tw-transition-all tw-duration-500 tw-h-96 tw-w-64 tw-rounded-3xl tw-overflow-hidden tw-shadow-2xl tw-cursor-pointer">
+                    <img src="./images/中盛溯源PC端-home3-_13.jpg" alt="" class="imgCover">
+                </div>
+                <span class="tw-mt-12">药物筛选</span>
+                <a href="" class="tw-mt-4 tw-text-xs tw-text-white tw-bg-primary tw-rounded-3xl tw-px-4 tw-py-1">
+                    了解更多
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div id="ct" class="tw-w-full tw-flex tw-h-600"
+     style="background-image: url('./images/中盛溯源PC端-home3-_21.png');background-position: right">
+    <div class="tw-w-1/2 tw-h-full">
+        <div id="cell_therapy_images_window" class="tw-w-9/12 tw-relative tw-h-full tw-overflow-hidden">
+            <ul id="cell_therapy_images" class="tw-relative tw-h-fit tw-flex tw-top-0 tw-left-0 tw-h-full">
+                <li class="tw-shrink-0">
+                    <div class="tw-h-fit tw-w-full">
+                        <img src="./images/co_imgs/1.jpg" alt="" class="imgCover">
+                    </div>
+                </li>
+                <li class="tw-shrink-0">
+                    <div class="tw-h-fit tw-w-full">
+                        <img src="./images/co_imgs/2.jpg" alt="" class="imgCover">
+                    </div>
+                </li>
+                <li class="tw-shrink-0">
+                    <div class="tw-h-fit tw-w-full">
+                        <img src="./images/co_imgs/3.jpg" alt="" class="imgCover">
+                    </div>
+                </li>
+                <li class="tw-shrink-0">
+                    <div class="tw-h-fit tw-w-full">
+                        <img src="./images/co_imgs/4.jpg" alt="" class="imgCover">
+                    </div>
+                </li>
+                <li class="tw-shrink-0">
+                    <div class="tw-h-fit tw-w-full">
+                        <img src="./images/co_imgs/1.jpg" alt="" class="imgCover">
+                    </div>
+                </li>
+
+            </ul>
+            <div class="tw-absolute tw-right-0 tw-bottom-0 tw-flex">
+                <div id="cell_therapy_change_prev"
+                     class="tw-cursor-pointer tw-h-12 tw-w-12 tw-text-primary tw-bg-white-0.5">
+                    <svg class="tw-w-12 tw-h-12 tw-fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M10.828 12l4.95 4.95-1.414 1.414L8 12l6.364-6.364 1.414 1.414z"/></svg>
+                </div>
+                <div id="cell_therapy_change"
+                     class="tw-cursor-pointer tw-h-12 tw-w-12  tw-text-primary  tw-bg-white-0.5">
+                    <svg class="tw-w-12 tw-h-12 tw-fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div  class="tw-w-1/2 tw-h-full">
+        <div class="tw-py-16 tw-w-600 tw-h-full">
+            <!--<div class="tw-relative">-->
+            <!--    <p class="tw-relative tw-z-20 tw-text-primary tw-text-center tw-text-30">细胞医疗</p>-->
+            <!--    <p class="tw-absolute tw-z-10 tw-top-1/2 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-1/2 tw-text-4xl tw-text-white-0.2 tw-text-center tw-w-72">产品与服务</p>-->
+            <!--</div>-->
+            <p class="tw-text-white tw-text-30 tw-text-center">细胞医疗</p>
+            <p class="tw-text-20 tw-text-gray-400 tw-text-center tw-mt-4">Cell Therapy</p>
+            <ul id="cell_therapy_list" class="tw-mt-24">
+                <li class="">
+                    <div class="tw-text-white">
+                        <p class="tw-text-20">中国人群超级供体iPSC细胞库</p>
+                        <p class="tw-mt-3 tw-text-14">匹配中国大部分人群，可作为种子细胞开发医疗产品，实现一对多的普适性治疗用途，利于大规模标准化生产与质量控制。</p>
+                        <div class="tw-flex  tw-mt-3 tw-h-8 tw-text-14 tw-flex tw-items-center tw-w-fit tw-gap-px">
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">研究与开发</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">临床前研究</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">IND申请</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">临床研究</span>
+                        </div>
+                    </div>
+                    <a href=""
+                       class="tw-text-xs tw-text-white tw-rounded-2xl tw-border tw-border-white tw-px-6 tw-py-1 tw-inline-block tw-mt-20">了解更多</a>
+                </li>
+                <li class="">
+                    <div class="tw-text-white tw-mt-16">
+                        <p class="tw-text-20">iPSC分化为间充质干细胞临床应用</p>
+                        <p class="tw-mt-3 tw-text-14">由iPSC诱导分化的间充质干细胞, 高度均一、特性稳定、质量可控，细胞年轻态，可提高细胞治疗的有效率和稳定性。</p>
+                        <div class="tw-flex  tw-mt-3 tw-h-8 tw-text-14 tw-flex tw-items-center tw-w-fit tw-gap-px">
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">研究与开发</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">临床前研究</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">IND申请</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">临床研究</span>
+                        </div>
+                    </div>
+                    <a href=""
+                       class="tw-text-xs tw-text-white tw-rounded-2xl tw-border tw-border-white tw-px-6 tw-py-1 tw-inline-block tw-mt-20">了解更多</a>
+                </li>
+                <li class="">
+                    <div class="tw-text-white tw-mt-16">
+                        <p class="tw-text-20">iPSC分化为多巴胺能神经元治疗帕金森氏症</p>
+                        <p class="tw-mt-3 tw-text-14">使用iPSC定向分化的多巴胺能神经元可以突破细胞数量、质量的限制，为临床试验提供质量均一，功能完备的细胞制剂。</p>
+                        <div class="tw-flex  tw-mt-3 tw-h-8 tw-text-14 tw-flex tw-items-center tw-w-fit tw-gap-px">
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">研究与开发</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">临床前研究</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">IND申请</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">临床研究</span>
+                        </div>
+                    </div>
+                    <a href=""
+                       class="tw-text-xs tw-text-white tw-rounded-2xl tw-border tw-border-white tw-px-6 tw-py-1 tw-inline-block tw-mt-20">了解更多</a>
+                </li>
+                <li class="">
+                    <div class="tw-text-white tw-mt-16">
+                        <p class="tw-text-20">iPSC分化为免疫细胞治疗癌症</p>
+                        <p class="tw-mt-3 tw-text-14">以iPSC 为基础的iNK、 CAR-NK 、CAR-T疗法，可最大程度避免免疫排斥反应，并能快速、精准、高效地识别和杀伤肿瘤细胞。</p>
+                        <div class="tw-flex  tw-mt-3 tw-h-8 tw-text-14 tw-flex tw-items-center tw-w-fit tw-gap-px">
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">研究与开发</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">临床前研究</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">IND申请</span>
+                            <span class="tw-block tw-px-4 tw-flex tw-items-center tw-bg-white-0.5 tw-h-full tw-text-white">临床研究</span>
+                        </div>
+                    </div>
+                    <a href=""
+                       class="tw-text-xs tw-text-white tw-rounded-2xl tw-border tw-border-white tw-px-6 tw-py-1 tw-inline-block tw-mt-20">了解更多</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+<div class="tw-w-full tw-h-fit" style="background-image: url(./images/footer_bg.png)">
+    <div class="tw-h-full tw-w-full tw-py-10 tw-flex tw-flex-col tw-justify-between">
+        <div class="tw-flex tw-justify-between inner-box">
+            <div class="tw-flex tw-flex-col tw-border-l tw-border-fb-border tw-pl-4 tw-w-1/4 tw-shrink-0">
+                <div class="tw-flex tw-items-center">
+                    <div class="tw-w-16 tw-h-16 tw-flex tw-items-center tw-justify-center" style="background-image: url(./images/footer/kuang.png);background-position: center;background-size: 100%">
+                        <img src="./images/footer/pin.png" alt="" class="tw-w-10 tw-h-10">
+                    </div>
+                    <span class="tw-text-white tw-ml-3 tw-text-20">细胞试剂</span>
+                </div>
+                <div class="tw-mt-6">
+                    <div class="ful_header tw-flex tw-gap-2 tw-text-white tw-items-center">
+                        <p class=" tw-cursor-pointer tw-text-lg">人多能干细胞培养试剂</p>
+                        <svg class="tw-fill-current tw-transform tw-transition-all tw-duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                    </div>
+
+                    <ul class="tw-pl-4 tw-flex tw-mt-3 tw-hidden tw-flex-col tw-text-14">
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hiPSC/hESC培养基-ncTarget</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hiPSC/hESC培养基-ncEpic</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">VTN包被蛋白</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">高效冻存液</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hiPSC/hESC高效电转液</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">ncB27无血清添加剂</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">ROCK 通道抑制剂</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tw-mt-4">
+                    <div class="ful_header tw-flex tw-gap-2 tw-text-white tw-items-center">
+                        <p class=" tw-cursor-pointer tw-text-lg">人间充质干细胞培养试剂</p>
+                        <svg class="tw-fill-current tw-transform tw-transition-all tw-duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                    </div>
+                    <ul class="tw-pl-4 tw-flex tw-mt-3 tw-hidden tw-flex-col tw-text-14">
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">人间充质干细胞无血清培养基</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">人间充质干细胞冻存液</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">0.25% 胰蛋白酶消化液</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">胰蛋白酶抑制剂</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tw-mt-4">
+                    <div class="ful_header tw-flex tw-gap-2 tw-text-white tw-items-center">
+                        <p class=" tw-cursor-pointer tw-text-lg">体细胞定向分化试剂盒</p>
+                        <svg class="tw-fill-current tw-transform tw-transition-all tw-duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                    </div>
+                    <ul class="tw-pl-4 tw-flex tw-mt-3 tw-hidden tw-flex-col tw-text-14">
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-多巴胺能神经元分化试剂盒</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-运动神经元分化试剂盒</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-类肾器官分化试剂盒</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-RPE分化试剂盒</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-border-l tw-border-fb-border tw-pl-4 tw-w-1/4 tw-shrink-0">
+                <div class="tw-flex tw-items-center">
+                    <div class="tw-w-16 tw-h-16 tw-flex tw-items-center tw-justify-center" style="background-image: url(./images/footer/kuang.png);background-position: center;background-size: 100%">
+                        <img src="./images/footer/cell.png" alt="" class="tw-w-10 tw-h-10">
+                    </div>
+                    <span class="tw-text-white tw-ml-3 tw-text-20">技术服务</span>
+                </div>
+                <div class="tw-mt-6">
+                    <div class="ful_header tw-flex tw-gap-2 tw-text-white tw-items-center">
+                        <p class=" tw-cursor-pointer tw-text-lg">多能干细胞</p>
+                        <svg class="tw-fill-current tw-transform tw-transition-all tw-duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                    </div>
+                    <ul class="tw-pl-4 tw-flex tw-mt-3 tw-hidden tw-flex-col tw-text-14">
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hiPSC细胞株-男性/女性</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hiPSC细胞株-荧光标记</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tw-mt-4">
+                    <div class="ful_header tw-flex tw-gap-2 tw-text-white tw-items-center">
+                        <p class=" tw-cursor-pointer tw-text-lg">间充质干细胞类</p>
+                        <svg class="tw-fill-current tw-transform tw-transition-all tw-duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                    </div>
+                    <ul class="tw-pl-4 tw-flex tw-mt-3 tw-hidden tw-flex-col tw-text-14">
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">原代hMSC细胞类</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-间充质干细胞</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hMSC细胞株-荧光标记</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tw-mt-4">
+                    <div class="ful_header tw-flex tw-gap-2 tw-text-white tw-items-center">
+                        <p class=" tw-cursor-pointer tw-text-lg">hMSC细胞株-荧光标记</p>
+                        <svg class="tw-fill-current tw-transform tw-transition-all tw-duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                    </div>
+                    <ul class="tw-pl-4 tw-flex tw-mt-3 tw-hidden tw-flex-col tw-text-14">
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-间充质干细胞</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-多巴胺能神经细胞</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-运动神经细胞</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-肾元细胞</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-RPE细胞</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-border-l tw-border-fb-border tw-pl-4 tw-w-1/4 tw-shrink-0">
+                <div class="tw-flex tw-items-center">
+                    <div class="tw-w-16 tw-h-16 tw-flex tw-items-center tw-justify-center" style="background-image: url(./images/footer/kuang.png);background-position: center;background-size: 100%">
+                        <img src="./images/footer/pin.png" alt="" class="tw-w-10 tw-h-10">
+                    </div>
+                    <span class="tw-text-white tw-ml-3 tw-text-20">技术服务</span>
+                </div>
+                <div class="tw-mt-6">
+                    <div class="ful_header tw-flex tw-gap-2 tw-text-white tw-items-center">
+                        <p class=" tw-cursor-pointer tw-text-lg">iPSC重编组与定向分化</p>
+                        <svg class="tw-fill-current tw-transform tw-transition-all tw-duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                    </div>
+                    <ul class="tw-pl-4 tw-flex tw-mt-3 tw-hidden tw-flex-col tw-text-14">
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">人体细胞iPSC重编程建系</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-间充质干细胞定向分化</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-多巴胺能神经元定向分化</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-多巴胺能神经元定向分化</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-运动神经元定向分化</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-类肾器官定向分化</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC-RPE细胞定向分化</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="tw-mt-4">
+                    <div class="ful_header tw-flex tw-gap-2 tw-text-white tw-items-center">
+                        <p class=" tw-cursor-pointer tw-text-lg">其他相关技术服务</p>
+                        <svg class="tw-fill-current tw-transform tw-transition-all tw-duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/></svg>
+                    </div>
+                    <ul class="tw-pl-4 tw-flex tw-mt-3 tw-hidden tw-flex-col tw-text-14">
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">人源细胞染色体核型分析</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">hPSC畸胎瘤鉴定</a>
+                        </li>
+                        <li class="tw-my-0.5">
+                            <a href="" class="tw-text-gray-300">其他相关技术服务</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tw-flex tw-flex-col tw-border-l tw-border-fb-border tw-pl-4 tw-w-1/4 tw-shrink-0">
+                <div class="tw-flex tw-items-center">
+                    <div class="tw-w-16 tw-h-16 tw-flex tw-items-center tw-justify-center" style="background-image: url(./images/footer/kuang.png);background-position: center;background-size: 100%">
+                        <img src="./images/footer/phone.png" alt="" class="tw-w-10 tw-h-10">
+                    </div>
+                    <span class="tw-text-white tw-ml-3 tw-text-20">联系我们</span>
+                </div>
+
+                <div class="tw-mt-6 tw-flex tw-flex-col">
+                    <span class="tw-text-white tw-text-xl tw-font-thin">400 888 3920</span>
+                    <span class="tw-text-white tw-text-xl tw-font-thin">service@nuwacell.com</span>
+                </div>
+                <div class="tw-flex tw-flex-col tw-mt-6">
+                    <a href="" class="tw-text-white tw-text-xl tw-border tw-border-white tw-inline-block tw-w-fit tw-px-8 tw-rounded-full tw-py-1">
+                        关于我们
+                    </a>
+                    <a href="" class="tw-text-white tw-mt-6 tw-text-xl tw-border tw-border-white tw-inline-block tw-w-fit tw-px-8 tw-rounded-full tw-py-1">
+                        资源中心
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="tw-text-gray-300 tw-mt-12">
+            <p class="tw-text-center">Copyright © 2012-2022 中盛溯源生物科技有限公司. All rights reserved. 皖ICP备16011195号</p>
+            <p class="tw-text-center tw-mt-3">皖公网安备 34019202001635号</p>
+        </div>
+    </div>
+</div>
+
+<!--    悬浮-->
+<ul class="tw-fixed tw-right-0 tw-top-56 tw-flex tw-z-50 tw-flex-col">
+    <li class="tw-cursor-pointer tw-my-px tw-bg-fb-1 tw-w-14 tw-h-10 tw-rounded-l-lg tw-flex tw-justify-center tw-items-center">
+        <a href="tel:18888888888" class="">
+            <img src="./images/fb/phone.png" alt="" class="">
+        </a>
+    </li>
+    <li class="tw-cursor-pointer tw-my-px tw-bg-fb-2 tw-w-14 tw-h-10 tw-rounded-l-lg tw-flex tw-justify-center tw-items-center">
+        <a href="mailto:test@163.com" class="">
+            <img src="./images/fb/email.png" alt="" class="">
+        </a>
+    </li>
+    <li class="tw-cursor-pointer tw-my-px tw-bg-fb-1 tw-w-14 tw-h-10 tw-rounded-l-lg tw-flex tw-justify-center tw-items-center">
+        <a href="" class="">
+            <img src="./images/fb/cell.png" alt="" class="">
+        </a>
+    </li>
+    <li class="tw-cursor-pointer tw-my-px tw-bg-fb-2 tw-w-14 tw-h-10 tw-rounded-l-lg tw-flex tw-justify-center tw-items-center">
+        <a href="" class="">
+            <img src="./images/fb/qr.png" alt="" class="">
+        </a>
+    </li>
+</ul>
+
+<!-- back -->
+<div id="backTop" class="tw-cursor-pointer tw-fixed tw-right-2 tw-flex tw-items-center tw-justify-center tw-rounded-full tw-bottom-56 tw-flex tw-z-50 tw-flex-col tw-w-12 tw-h-12 tw-bg-primary">
+    <div class="tw-w-5 tw-h-5">
+        <img src="./images/upup.png" alt="" class="imgCover">
+    </div>
+
+</div>
+
+<!--    弹窗-->
+<div id="contact_box" class="tw-hidden tw-z-50 tw-px-4 tw-py-6 tw-fixed tw-top-1/2 tw-left-1/2 tw-transform -tw-translate-x-1/2 -tw-translate-y-1/2 tw-w-1/3 tw-h-fit tw-bg-black-0.3">
+    <p class="tw-text-20 tw-text-white tw-font-bold tw-text-center">联系我们</p>
+    <div class="tw-mt-4 tw-w-full">
+        <div class="tw-w-full tw-flex tw-gap-4">
+            <div class="tw-w-1/2 tw-gap-2 tw-flex tw-flex-col">
+                <span class="tw-text-white">邮箱</span>
+                <input type="text" class="tw-h-10 tw-rounded-sm tw-px-2 tw-w-full" placeholder="邮箱地址">
+            </div>
+            <div class="tw-w-1/2 tw-gap-2 tw-flex tw-flex-col">
+                <span class="tw-text-white">产品名称</span>
+                <input type="text" class="tw-h-10 tw-rounded-sm tw-px-2 tw-w-full" placeholder="产品名称">
+            </div>
+        </div>
+        <div class="tw-w-full tw-gap-2 tw-flex tw-flex-col tw-mt-4">
+            <span class="tw-text-white">留言</span>
+            <textarea name="" id="" cols="30" rows="10" class="tw-h-20 tw-rounded-sm tw-p-2" placeholder="留言"></textarea>
+        </div>
+        <div class="tw-flex tw-items-center tw-justify-center tw-mt-6">
+            <button type="submit" class="tw-w-36 tw-border tw-border-red-700 tw-rounded-sm tw-text-14 tw-h-8 tw-text-red-700">提交</button>
+        </div>
+    </div>
+    <div id="close_contact" class="tw-cursor-pointer tw-h-8 tw-w-8 tw-flex tw-items-center tw-justify-center tw-text-red-700 tw-rounded-full tw-bg-white tw-absolute tw-top-0 tw-right-0 tw-transform tw-translate-x-1/2 -tw-translate-y-1/2">
+        <svg class="tw-fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"/></svg>
+    </div>
+</div>
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<script src="./js/jquery.countup.min.js"></script>
+<script src="./js/jquery.waypoints.min.js"></script>
+<script>
+    $(function () {
+        // navigator
+        $(window).scroll(function(){
+            var doc_height = $(document).height();
+            var scroll_top = $(document).scrollTop();
+            var window_height = $(window).height();
+
+            if(scroll_top == 0){
+                $('#nav').css('background-color','transparent')
+                $('#nav_ul').css('color','white')
+                $('#nav_search').css('filter','brightness(100)')
+                $('#nav_country').css('color','white')
+            }else {
+                $('#nav').css('background-color','white')
+                $('#nav_ul').css('color','black')
+                $('#nav_search').css('filter','brightness(0)')
+                $('#nav_country').css('color','black')
+            }
+        });
+
+
+        // banner
+        const banner_height = $('#banner_list > li:first-of-type > img').height()
+        $('#banner_window').css('height',banner_height)
+
+        $('#banner_p > li').click(function (){
+            $('#banner_p > li').removeClass('s2-p-active').addClass('s2-p-normal')
+            $(this).removeClass('s2-p-normal').addClass('s2-p-active')
+            $('#banner_list').css('left','-'+($(this).index() * 100) + 'vw')
+        })
+
+        $('#banner_p > li').eq(0).click()
+
+
+
+        const s_list_window_height = $('#s_list_window').height()
+        console.log(s_list_window_height)
+        $('#s_list > li').css('height',s_list_window_height + 'px')
+
+        $('#s2_p > li').click(function (){
+            $('#s2_p > li').removeClass('s2-p-active').addClass('s2-p-normal')
+            $(this).removeClass('s2-p-normal').addClass('s2-p-active')
+            $('#s_list').css('top','-'+($(this).index() * s_list_window_height) + 'px')
+        })
+
+        $('#s2_p > li').eq(0).click()
+
+
+        //service
+        const service_top = $('#service_box').offset().top
+        const service_img_top = $('.ps_img').offset().top
+        const service_img_height = $('.ps_img').height()
+        $('#service_bg').css('height',((service_img_top - service_top) + service_img_height / 2)+'px' )
+
+
+
+        // $('#ps_list > li').click(function (){
+        //     $('#ps_list > li').find('.ps_img').css('transform','scale(1)')
+        //     $(this).find('.ps_img').css('transform','scale(1.1)')
+        // })
+
+        $('.ps_img').focus(function (){
+            $(this).css('transform','scale(1.2)')
+        }).blur(function (){
+            $(this).css('transform','scale(1)')
+        })
+
+
+
+        // setTimeout(()=>{
+        //     const ct_text_height1 = $('#ct_text').height()
+        //     console.log('height：'+ct_text_height1)
+        //     $('#cell_therapy_images > li img').css('height',ct_text_height1 + 'px')
+        // },)
+
+        /*
+        * copyright: jpz 2022/06/02
+        * */
+
+
+
+        let cell_therapy_index = 0
+        ct_text(cell_therapy_index)
+        const cell_therapy_width = $('#cell_therapy_images_window').width();
+        $('#cell_therapy_images > li').css('width', cell_therapy_width + 'px')
+
+        $('#cell_therapy_change_prev').click(()=>{
+            if(cell_therapy_index === 0){
+                cell_therapy_index = 3
+                $('#cell_therapy_images').css('transition', 'none').css('left', '-' + (4 * cell_therapy_width) + 'px')
+                setTimeout(()=>{
+                    $('#cell_therapy_images').css('transition', '0.5s ease').css('left', '-' + (cell_therapy_index * cell_therapy_width) + 'px')
+                },)
+            }else{
+                cell_therapy_index--
+                $('#cell_therapy_images').css('transition', '0.5s ease').css('left', '-' + (cell_therapy_index * cell_therapy_width) + 'px')
+            }
+            ct_text(cell_therapy_index)
+        })
+
+        $('#cell_therapy_change').click(() => {
+            cell_therapy_index++;
+            if (cell_therapy_index === 4) {
+                // cell_therapy_index ++
+                $('#cell_therapy_images').css('transition', '0.5s ease').css('left', '-' + (cell_therapy_index * cell_therapy_width) + 'px')
+                setTimeout(() => {
+                    $('#cell_therapy_images').css('transition', 'none').css('left', '0px')
+                }, 500)
+                cell_therapy_index = 0
+
+            } else {
+                $('#cell_therapy_images').css('transition', '0.5s ease').css('left', '-' + (cell_therapy_index * cell_therapy_width) + 'px')
+            }
+            ct_text(cell_therapy_index)
+        })
+
+        function ct_text(index) {
+            $('#cell_therapy_list > li').addClass('tw-hidden')
+            $('#cell_therapy_list > li').eq(index).removeClass('tw-hidden')
+        }
+
+        $('.ful_header').click(function () {
+            if ($(this).find('svg').hasClass('tw-rotate-90')){
+                $(this).find('svg').removeClass('tw-rotate-90')
+            }else{
+                $(this).find('svg').addClass('tw-rotate-90')
+            }
+
+            $(this).next().toggle('tw-flex')
+        })
+
+
+        $('#backTop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+
+        setTimeout(()=>{
+            $('#contact_box').removeClass('tw-hidden')
+        },3000)
+
+        $('#close_contact').click(function () {
+            $('#contact_box').addClass('tw-hidden')
+        })
+
+
+        $('.num').countUp()
+    })
+</script>
 </html>
